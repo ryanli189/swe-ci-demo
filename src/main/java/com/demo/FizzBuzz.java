@@ -22,21 +22,21 @@ public class FizzBuzz
 	String processNumbers (int[] numList)
 	{
     	String s = "";
-	    if(nums.length == 0){
+	    if(numList.length == 0){
 	            return "Invalid Input";
 	    }
-	    for(int i = 0; i < nums.length; i++){
-	    	if(nums[i] % 15 == 0){
+	    for(int i = 0; i < numList.length; i++){
+	    	if(numList[i] % 15 == 0){
 	    		s += "FizzBuzz";
 	        }
-	        else if(nums[i] % 5 == 0){
+	        else if(numList[i] % 5 == 0){
 	        	s += "Buzz";
 	        }
-	        else if(nums[i] % 3 == 0){
+	        else if(numList[i] % 3 == 0){
 	        	s += "Fizz";
 	        }
 	        else{
-	        	s += String.valueOf(numsList[i]);
+	        	s += String.valueOf(numList[i]);
 	        }
 	    }
 	    return s;
