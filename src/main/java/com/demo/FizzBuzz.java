@@ -4,9 +4,9 @@ public class FizzBuzz
 {
     String processNumber(int num)
 	{	
-    	if (num < 0) {
-				return "Invalid Input";
-			}
+		if (num < 0) {
+			return "Invalid Input";
+		}
         	if (num % 3 == 0 && num % 5 != 0 ) {
         		return "Fizz";
         	}
@@ -36,7 +36,7 @@ public class FizzBuzz
 	        	s += "Fizz";
 	        }
 	        else{
-	        	s += String.valueOf(nums[i]);
+	        	s += String.valueOf(numsList[i]);
 	        }
 	    }
 	    return s;
